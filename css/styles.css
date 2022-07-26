@@ -431,6 +431,13 @@ body {
   background-color: #fff;
   line-height: 100%;
 }
+.wrapper {
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  z-index: 60;
+}
 a {
   color: #000;
 }

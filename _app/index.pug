@@ -19,7 +19,10 @@
 -var io = true;
 -var ah = true;
 
-
+mixin b(cl, href, p, target, id)
+	a.button(class=cl href!=href target=target id=id)=p
+mixin imgs(cl, src, alt)
+	img(class=cl src=src alt=alt)
 
 
 doctype html
