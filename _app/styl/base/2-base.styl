@@ -8,8 +8,12 @@ body
 	color #000
 	background-color #fff
 	line-height: 100%
-.wrapper
-	overflow hidden
+.container
+	@media screen and (min-width 1230px)
+		max-width 1500px
+		width 98%
+// .wrapper
+// 	overflow hidden
 .content
 	position relative
 	z-index 60
@@ -79,11 +83,33 @@ footer
 	border-radius: 50px;
 	padding: 27px 55px;
 	font-weight: normal
+	transition: all .3s ease-out
 	&:focus
 		text-decoration none
 		color #fff
 	&:hover
 		text-decoration none
 		color #fff
+		transform: translateY(4px)
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	&-2
+		background-color: #FFFCFC;
+		background-image: none
+		box-shadow: none
+		border: 3px solid #416BD8;
+		color #416BD8;
+	&:focus
+	&:hover
+		background-color: #FFFCFC;
+		color #416BD8;
+		box-shadow: none
+.circle
+	border-radius: 50%
+	border: 3px solid #416BD8
+	position absolute
+.line
+	position absolute
+	height: 2px
+	background-color: #416BD8
 .general-title
 	text-align center

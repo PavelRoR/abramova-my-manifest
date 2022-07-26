@@ -431,8 +431,11 @@ body {
   background-color: #fff;
   line-height: 100%;
 }
-.wrapper {
-  overflow: hidden;
+@media screen and (min-width: 1230px) {
+  .container {
+    max-width: 1500px;
+    width: 98%;
+  }
 }
 .content {
   position: relative;
@@ -527,6 +530,10 @@ footer {
           border-radius: 50px;
   padding: 27px 55px;
   font-weight: normal;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .button:focus {
   text-decoration: none;
@@ -535,6 +542,43 @@ footer {
 .button:hover {
   text-decoration: none;
   color: #fff;
+  -webkit-transform: translateY(4px);
+     -moz-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+       -o-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+     -moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+          box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.button-2 {
+  background-color: #fffcfc;
+  background-image: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  border: 3px solid #416bd8;
+  color: #416bd8;
+}
+.button:focus,
+.button:hover {
+  background-color: #fffcfc;
+  color: #416bd8;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+.circle {
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  border: 3px solid #416bd8;
+  position: absolute;
+}
+.line {
+  position: absolute;
+  height: 2px;
+  background-color: #416bd8;
 }
 .general-title {
   text-align: center;
