@@ -1,0 +1,76 @@
+.general-title-video
+	text-align: right
+	position relative
+	padding: 0 30px 30px 0
+	span
+		position absolute
+		height: 126px
+		width 35px
+		right 0
+		top 10px
+		background-image: url(../img/icons/arrow.svg)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+.video-content
+	// min-height 1px
+	// height: 100%
+	max-height: 893px
+	position relative
+	// background-image: url(../img/backs/video.png)
+	// border-image-repeat: no-repeat
+	// background-position: center
+	// background-size: cover
+	.container
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom: 0
+		.content
+			height 100%
+	&-bg
+		display block
+		width 100%
+		object-fit: cover
+		object-position: center
+		height 100%
+		max-height: 893px
+.line-video
+	width 655px
+	top 260px
+	left -450px
+.video-content-text
+	position absolute
+	font-family: G
+	font-size: 38px
+	font-weight: bold
+	color #fff
+	text-align center
+	text-transform uppercase
+	&-1
+		top 160px
+		right 0
+		width 100%
+		max-width 400px
+	&-2
+		bottom 40px
+		left 0
+		width 100%
+		max-width 390px
+.play-button
+	width 176px
+	height 176px
+	position absolute
+	left 0
+	right 0
+	margin 0 auto
+	top calc(50% - 88px)
+	background-image: url(../img/icons/play.svg)
+	background-repeat no-repeat
+	background-position: center
+	background-size contain
+	opacity 1
+	transition: all .3s ease
+	&:hover
+		opacity .8
