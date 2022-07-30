@@ -1,3 +1,6 @@
+#video
+	@media screen and (max-width 991px)
+		margin-top: 100px
 .general-title-video
 	text-align: right
 	position relative
@@ -12,15 +15,12 @@
 		background-repeat no-repeat
 		background-position: center
 		background-size contain
+	@media screen and (max-width 991px)
+		width 50%
+		margin 0 0 0 auto
 .video-content
-	// min-height 1px
-	// height: 100%
 	max-height: 893px
 	position relative
-	// background-image: url(../img/backs/video.png)
-	// border-image-repeat: no-repeat
-	// background-position: center
-	// background-size: cover
 	.container
 		position absolute
 		top 0
@@ -40,6 +40,11 @@
 	width 655px
 	top 260px
 	left -450px
+	@media screen and (max-width 1199px)
+		left -550px
+	@media screen and (max-width 991px)
+		top 200px
+		left -500px
 .video-content-text
 	position absolute
 	font-family: G
@@ -48,16 +53,23 @@
 	color #fff
 	text-align center
 	text-transform uppercase
+	@media screen and (max-width 1199px)
+		font-size: 30px
 	&-1
 		top 160px
 		right 0
 		width 100%
 		max-width 400px
+		@media screen and (max-width 991px)
+			top 20px
+			max-width 310px
 	&-2
 		bottom 40px
 		left 0
 		width 100%
 		max-width 390px
+		@media screen and (max-width 991px)
+			max-width 280px
 .play-button
 	width 176px
 	height 176px
@@ -74,3 +86,11 @@
 	transition: all .3s ease
 	&:hover
 		opacity .8
+	@media screen and (max-width 1199px)
+		width 142px
+		height: 142px
+		top calc(50% - 71px)
+	@media screen and (max-width 991px)
+		width 100px
+		height: 100px
+		top calc(50% - 50px)

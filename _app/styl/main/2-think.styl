@@ -1,18 +1,32 @@
 #think
 	padding 100px 0
 	position relative
+	@media screen and (max-width 1199px)
+		padding 55px 0
 .content-think-1
 	margin-bottom: 200px
+	@media screen and (max-width 991px)
+		margin-bottom: 100px
 .general-img-think-1
 	top -100px
 	right -5%
+	@media screen and (max-width 1199px)
+		right -200px
+	@media screen and (max-width 991px)
+		width 472px
+		top 100px
+		right -150px
 .line-think
 	width 655px
 	bottom: -50px
 	right -500px
+	@media screen and (max-width 991px)
+		bottom: 100px
 .think-text
 	width 100%
 	max-width 60%
+	@media screen and (max-width 991px)
+		max-width 100%
 .general-title-think-1
 	display flex
 	align-items: flex-start
@@ -29,12 +43,22 @@
 	width 100%
 	max-width 92%
 	padding 25px 0 40px 25px
+	@media screen and (max-width 991px)
+		max-width 60%
+		padding 20px 0
 .general-title-think-2
 	width 73%
+	@media screen and (max-width 991px)
+		width 60%
 .think-billet
 	position absolute
 	bottom: -153px
 	left 34%
+	@media screen and (max-width 991px)
+		position relative
+		bottom: auto
+		left 0
+		top 0
 	&-img
 		height 200px
 		width 20px
@@ -44,6 +68,11 @@
 		background-size contain
 		display block
 		margin 0 auto 30px
+		@media screen and (max-width 991px)
+			height 97px
+			position absolute
+			top 10px
+			left 260px
 	&-item
 		display inline-block
 		width 100%
@@ -55,26 +84,54 @@
 		color: #FFFFFF;
 		padding 10px 30px
 		margin-left: 45px
+		@media screen and (max-width 991px)
+			width auto
+			padding 10px 50px
+			margin 135px 0 0 200px
 .think-item
 	&s
 		position relative
 		left 250px
 		top 30px
+		@media screen and (max-width 1199px)
+			left 230px
+		@media screen and (max-width 991px)
+			top 0
+			left 0
 	max-width 630px
 	margin-bottom: 70px
-	// padding-left: 130px
 	position relative
 	display flex
 	align-items: center
 	justify-content: flex-start
+	@media screen and (max-width 1199px)
+		max-width 450px
+	@media screen and (max-width 991px)
+		width 100%
 	&-img
 		margin-right: 30px
+		width 50px
 	&-1
 		margin-left: 250px
+		@media screen and (max-width 1199px)
+			margin-left: 230px
+		@media screen and (max-width 991px)
+			margin-left: 180px
 	&-2
 		margin-left: 166px
+		@media screen and (max-width 1199px)
+			margin-left: 145px
+		@media screen and (max-width 991px)
+			margin-left: 235px
 	&-3
 		margin-left: 83px
+		@media screen and (max-width 1199px)
+			margin-left: 53px
+		@media screen and (max-width 991px)
+			margin-left: 235px
+	&-4
+		@media screen and (max-width 991px)
+			margin-left: 180px
 .think-circles
 	position absolute
 	top -150px
@@ -87,6 +144,17 @@
 	height: 660px
 	border-radius: 50%
 	border 2px solid #416BD8
+	@media screen and (max-width 1199px)
+		width 550px
+		height: 550px
+		background-size: 450px
+		left -250px
+	@media screen and (max-width 991px)
+		width: 410px
+		height: 410px
+		background-size: 310px
+		left -200px
+		top 30px
 .circle-think-1
 	width 300px
 	height: 300px
@@ -97,8 +165,24 @@
 	background-repeat: no-repeat
 	background-position: center
 	background-size contain
+	@media screen and (max-width 1199px)
+		bottom: -50px
+		right -170px
+	@media screen and (max-width 991px)
+		width 250px
+		height: 250px
+		left -170px
+		right auto
+		bottom: -200px
 .circle-think-2
 	width 312px
 	height: 312px
 	bottom: -283px;
 	right: 208px;
+	@media screen and (max-width 1199px)
+		width 280px
+		height: 280px
+		right 150px
+		bottom: -260px
+	@media screen and (max-width 991px)
+		display none

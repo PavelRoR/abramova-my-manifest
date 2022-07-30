@@ -1,5 +1,5 @@
 -var path = '';
--var head_url = 'https://abramova.iomp.online/my-manifest/';
+-var head_url = 'https://abramova.mvacademy.ru/my-manifest/';
 -var head_title = '«Мой манифест»';
 -var head_description = 'Онлайн-марафон Жанны Абрамовой';
 -var head_img = 'img/banner.jpg';
@@ -10,19 +10,19 @@
 -var libs = path+'js/libs.min.js';
 -var scripts = path+'js/scripts.min.js';
 -var noref = true
--var action = '';
--var group = '';
--var formId = '';
--var formVc = '';
+-var action = 'https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=';
+-var group = '2011';
+-var formId = '839';
+-var formVc = '2440814534';
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
--var io = true;
+-var ak = true;
 -var ah = true;
 
 mixin b(cl, href, p, target, id)
 	a.button(class=cl href!=href target=target id=id)=p
 mixin imgs(cl, src, alt)
-	img(class=cl src=src alt=alt)
+	img(class=cl src=path+src alt=alt)
 
 
 doctype html

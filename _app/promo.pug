@@ -1,0 +1,29 @@
+-var path = '../';
+-var head_url = 'https://abramova.mvacademy.ru/my-manifest/promo/';
+-var head_title = 'Спасибо что зарегистрировались на марафон';
+-var head_description = 'Подпишитесь в Telegram';
+-var styles = path+'css/promo.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var noref = true
+-var ak = true;
+-var ah = true;
+
+mixin b(cl, href, p, target, id)
+	a.button(class=cl href!=href target=target id=id)=p
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/promo/1-main
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

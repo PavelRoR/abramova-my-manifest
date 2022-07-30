@@ -1,17 +1,41 @@
-#doubts
+.doubts-d
 	background-color: #3A3939
 	background-image: url(../img/backs/doubts-d.png)
 	background-repeat no-repeat
 	background-position: center top
 	background-size: cover
 	padding 45px 0 90px
+	@media screen and (max-width 1199px)
+		padding 45px 0 125px
+		background-position: top left
+	@media screen and (max-width 991px)
+		display none !important
+.doubts-mob
+	display none
+	@media screen and (max-width 991px)
+		padding 100px 0 0
+		display block !important
+		&-container
+			padding 20px 0 90px
+			background-color: #3A3939
+			background-image: url(../img/backs/doubts-d.png)
+			background-repeat no-repeat
+			background-position: center top
+			background-size: cover
 .circle-doubts
 	width 349px
 	height: 349px
 	top -175px
 	right -250px
+	@media screen and (max-width 1199px)
+		width 280px
+		height: 280px
+	@media screen and (max-width 991px)
+		right -150px
 .general-title-doubts
 	margin-bottom: 45px
+	@media screen and (max-width 991px)
+		margin-bottom: 0
 	small
 		display block
 		font-size: 24px
@@ -21,6 +45,13 @@
 		position relative
 		&:last-of-type
 			margin-left: 300px
+		@media screen and (max-width 991px)
+			color #000
+			font-family: M
+			font-weight: normal
+			&:last-of-type
+				margin-left: 100px
+				
 	span
 		display block
 		position relative
@@ -35,5 +66,13 @@
 	margin-bottom: 20px
 	span
 		font-weight: bold
+	@media screen and (max-width 991px)
+		max-width none
+		width 50%
+		margin-bottom: 40px
 .button-doubts
 	margin 180px 0 0
+	@media screen and (max-width 1199px)
+		margin: 35px 0 0
+	@media screen and (max-width 991px)
+		margin-top: 70px
