@@ -2,6 +2,8 @@
 	padding 100px 0 55px
 	@media screen and (max-width 991px)
 		padding 60px 0
+	@media screen and (max-width 560px)
+		padding 40px 0
 .general-title-cta
 	position relative
 	span
@@ -44,6 +46,8 @@
 		bottom: 0
 		.content
 			height 100%
+	@media screen and (max-width 560px)
+		margin-bottom: 40px
 .stolen
 	&-bg
 		width 100%
@@ -51,51 +55,93 @@
 		object-position: center top
 		height 100%
 		max-height: 1015px
+		&-mob
+			display none
+		@media screen and (max-width 480px)
+			&-d
+				display none
+			&-mob
+				display block
+	&-content
+		position absolute
+		top 300px
+		right 0
+		width 100%
+		max-width 680px
+		@media screen and (max-width 1199px)
+			top calc(50% - 100px)
+		&-inner
+			width 100%
+			max-width 330px
+			margin 0 60px 0 auto
+			position relative
+			z-index 20
+			@media screen and (max-width 1199px)
+				max-width 260px
+			@media screen and (max-width 991px)
+				margin 0 0 0 auto
+				max-width 270px
+			@media screen and (max-width 767px)
+				max-width 220px
+			@media screen and (max-width 560px)
+				max-width 180px
+			@media screen and (max-width 480px)
+				margin 0 auto 0 0
 	&-title
 		font-family: G
+		font-size: 36px
 		font-weight: bold
 		text-transform uppercase
 		text-align center
 		color #fff
 		width 100%
-		max-width 300px
-		position absolute
-		bottom: 530px
-		right 0
-		@media screen and (max-width 991px)
-			bottom calc(50% - 28px)
+		@media screen and (max-width 1199px)
+			font-size: 30px
+		@media screen and (max-width 767px)
+			font-size: 24px
+			line-height: 34px
+		@media screen and (max-width 560px)
+			font-size: 20px
 	&-arrow
-		position absolute
 		height 413px
 		width 24px
-		bottom: 100px
-		right 135px
+		margin 25px auto -30px
 		background-image: url(../img/icons/arrow-stolen.svg)
 		background-repeat no-repeat
 		background-position: center
 		background-size contain
 		z-index 20
-		@media screen and (max-width 1199px)
-			bottom: 75px
-		@media screen and (max-width 991px)
-			height: 160px
-			bottom: 60px
+		@media screen and (max-width 1299px)
+			height 350px
+		@media screen and (max-width 1100px)
+			height: 250px
 			background-image: url(../img/icons/arrow-stolen-mob.svg)
+		@media screen and (max-width 840px)
+			height 200px
+		@media screen and (max-width 590px)
+			height: 150px
+		@media screen and (max-width 480px)
+			margin-bottom: -15px
+			height: 150px
+		@media screen and (max-width 386px)
+			height 115px
+			margin-top 15px
+		@media screen and (max-width 326px)
+			height 75px
 	&-text
 		padding 50px
 		background-color #fff
 		box-shadow: 14px 15px 26px rgba(0, 0, 0, 0.09);
 		border-radius: 20px;
-		position absolute
-		bottom: -120px
-		right 60px
 		width 100%
 		max-width 620px
 		z-index 10
-		@media screen and (max-width 1199px)
-			max-width 548px
-		@media screen and (max-width 991px)
-			max-width 700px
-			left 0
-			right 0
-			margin 0 auto
+		margin 0 0 0 auto
+		@media screen and (max-width 767px)
+			padding 30px
+			width 70%
+		@media screen and (max-width 560px)
+			width 100%
+			max-width none
+		@media screen and (max-width 480px)
+			padding 20px

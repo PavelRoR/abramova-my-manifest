@@ -1,10 +1,10 @@
-#video
-	@media screen and (max-width 991px)
-		margin-top: 100px
 .general-title-video
-	text-align: right
+	text-align: center
 	position relative
 	padding: 0 30px 30px 0
+	margin: 0 0 0 auto;
+	width: 100%;
+	max-width: 600px;
 	span
 		position absolute
 		height: 126px
@@ -15,9 +15,10 @@
 		background-repeat no-repeat
 		background-position: center
 		background-size contain
-	@media screen and (max-width 991px)
-		width 50%
-		margin 0 0 0 auto
+	@media screen and (max-width 1199px)
+		max-width 505px
+	@media screen and (max-width 767px)
+		max-width 300px
 .video-content
 	max-height: 893px
 	position relative
@@ -45,6 +46,9 @@
 	@media screen and (max-width 991px)
 		top 200px
 		left -500px
+	@media screen and (max-width 386px)
+		top 180px
+		left -550px
 .video-content-text
 	position absolute
 	font-family: G
@@ -55,6 +59,10 @@
 	text-transform uppercase
 	@media screen and (max-width 1199px)
 		font-size: 30px
+	@media screen and (max-width 560px)
+		font-size: 16px
+	@media screen and (max-width 386px)
+		font-size: 14px
 	&-1
 		top 160px
 		right 0
@@ -63,6 +71,9 @@
 		@media screen and (max-width 991px)
 			top 20px
 			max-width 310px
+			right 20px
+		@media screen and (max-width 560px)
+			width 50%
 	&-2
 		bottom 40px
 		left 0
@@ -70,6 +81,9 @@
 		max-width 390px
 		@media screen and (max-width 991px)
 			max-width 280px
+		@media screen and (max-width 560px)
+			width 50%
+			bottom: 20px
 .play-button
 	width 176px
 	height 176px
@@ -94,3 +108,7 @@
 		width 100px
 		height: 100px
 		top calc(50% - 50px)
+	@media screen and (max-width 560px)
+		width 50px
+		height: 50px
+		top calc(50% - 25px)

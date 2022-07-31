@@ -9,12 +9,14 @@ section#cta
 			.col-md-4.col-md-offset-1
 				+b(' button-2 button-up button-cta', '#Modal', 'Принять участие')
 section#stolen
-	+imgs('stolen-bg mob-none', 'img/backs/stolen-d.png', 'Фон блока')
-	+imgs('stolen-bg d-none', 'img/backs/stolen-d.png', 'Фон блока')
+	+imgs('stolen-bg stolen-bg-d', 'img/backs/stolen-d.png', 'Фон блока')
+	+imgs('stolen-bg stolen-bg-mob', 'img/backs/stolen-m.png', 'Фон блока')
 	.container
 		.content
-			h3.stolen-title Кто украл у тебя твою жизнь?
-			.stolen-arrow
-			p.stolen-text Кто то скажет - ты сама ответственна за свою жизнь, кроме тебя никто не виноват.
-				br
-				| Но я говорю, что не все так просто, зачастую наших даже самых сильных желаний недостаточно, чтобы изменить свою жизнь.
+			.stolen-content
+				.stolen-content-inner
+					h3.stolen-title Кто украл у тебя твою жизнь?
+					.stolen-arrow
+				p.stolen-text Кто то скажет - ты сама ответственна за свою жизнь, кроме тебя никто не виноват.
+					br
+					| Но я говорю, что не все так просто, зачастую наших даже самых сильных желаний недостаточно, чтобы изменить свою жизнь.

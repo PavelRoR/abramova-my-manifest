@@ -13,11 +13,12 @@ section#main
 					+imgs('main-title-img', 'img/images/manifest.png','Манифест')
 				.row
 					.col-md-7.col-md-offset-5
-						h2.main-subtitle пересобери свою идентичность
-						p.main-text Достигни своих целей и реализуй мечты с помощью современных психологических практик.
+						.main-descript
+							h2.main-subtitle пересобери свою идентичность
+							p.main-text Достигни своих целей и реализуй мечты с помощью современных психологических практик.
 				.main-info
 					.row
-						.col-md-5.col-sm-6
+						.col-md-5.col-sm-6.col-xs-6
 							.main-info-item.main-info-item-1
 								+imgs('main-info-item-number', 'img/images/4.png', '4')
 								.main-info-item-inner
@@ -25,13 +26,13 @@ section#main
 									+imgs('main-info-item-date', 'img/images/weeks.png', 'недели')
 								.clearfix
 							p.main-info-item-text работаем с блоками, ограничивающими убеждениями, травмами и обидами, которые мешают вашей мечте стать реальностью.
-						.col-md-3.col-sm-6
+						.col-md-3.col-sm-6.col-xs-6
 							.main-info-item.main-info-item-2
 								+imgs('main-info-item-number', 'img/images/15.png', '15')
 								.main-info-item-inner
 									p.main-info-text старт
 									+imgs('main-info-item-date', 'img/images/august.png', 'август')
-						.col-md-4.col-sm-12
+						.col-md-4.col-sm-12.col-xs-12
 							form(action!=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-main
 								.email-block.email-block-form
 									input(type="hidden" value="1" name="required_fields[email]")
