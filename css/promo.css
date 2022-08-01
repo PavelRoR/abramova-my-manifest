@@ -38,6 +38,14 @@
   src: url("../fonts/MontserratBold.eot");
   src: url("../fonts/MontserratBold.eot") format('embedded-opentype'), url("../fonts/MontserratBold.woff2") format('woff2'), url("../fonts/MontserratBold.woff") format('woff'), url("../fonts/MontserratBold.ttf") format('truetype'), url("../fonts/MontserratBold.svg#MontserratBold") format('svg');
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-display: fallback;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/MontserratBlack.eot");
+  src: url("../fonts/MontserratBlack.eot") format('embedded-opentype'), url("../fonts/MontserratBlack.woff2") format('woff2'), url("../fonts/MontserratBlack.woff") format('woff'), url("../fonts/MontserratBlack.ttf") format('truetype'), url("../fonts/MontserratBlack.svg#MontserratBlack") format('svg');
+}
 /*!
  * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
  *//*!
@@ -346,8 +354,10 @@ section {
   }
 }
 #main {
-  padding: 100px 0;
-  min-height: 100vh;
+  padding: 100px 0 60px;
+  min-height: -webkit-calc(100vh - 59px);
+  min-height: -moz-calc(100vh - 59px);
+  min-height: calc(100vh - 59px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -501,4 +511,81 @@ section {
     margin-bottom: 25px;
     padding: 17px;
   }
+}
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgba(238,238,238,0.7);
+  font-size: 14px;
+}
+@media screen and (max-width: 560px) {
+  footer {
+    padding: 15px 0;
+    font-size: 12px;
+  }
+}
+footer h5 {
+  font-size: 20px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+footer p {
+  line-height: 1.3;
+}
+.conditions {
+  padding-top: 10px;
+  display: inline-block;
+  color: #000;
+  text-decoration: underline;
+}
+.conditions:focus {
+  color: #000;
+  text-decoration: underline;
+}
+.conditions:hover {
+  color: #000;
+  text-decoration: none;
+}
+.soc-buttons {
+  width: 100%;
+  margin: 0 auto;
+}
+.soc-buttons a {
+  display: inline-block;
+  margin: 15px 7px 10px;
+  width: 29px;
+  height: 29px;
+  background-image: url("../img/icons/soc-buttons.png");
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.soc-buttons a:hover {
+  opacity: 0.9;
+  -webkit-transform: translateY(-3px);
+     -moz-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+       -o-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+.soc-buttons a:nth-of-type(1) {
+  background-position: 0 0;
+}
+.soc-buttons a:nth-of-type(2) {
+  background-position: -29px 0;
+}
+.soc-buttons a:nth-of-type(3) {
+  background-position: -58px 0;
+}
+.soc-buttons a:nth-of-type(4) {
+  background-position: -87px 0;
+}
+.soc-buttons a:nth-of-type(5) {
+  background-position: -116px 0;
+}
+.soc-buttons a:nth-of-type(6) {
+  background-position: -145px 0;
 }
