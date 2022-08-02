@@ -8,16 +8,25 @@
 	background-size: cover
 	position relative
 	z-index 90
+	@media screen and (max-width 991px)
+		padding 130px 0 100px
+		margin-top: -45px
+	@media screen and (max-width 767px)
+		padding 90px 0 60px
 .about-img
 	position absolute
 	top -100px
-	left -120px
+	left -150px
 	width 539px
 	height: 999px
 	background-image: url(../img/images/about-d.png)
 	background-repeat no-repeat
 	background-position: center
 	background-size contain
+	@media screen and (max-width 1199px)
+		left -200px
+	@media screen and (max-width 991px)
+		display none
 .circle-about
 	width 300px
 	height: 300px
@@ -29,19 +38,40 @@
 	position absolute
 	top -50px
 	right -270px
+	@media screen and (max-width 991px)
+		top auto
+		bottom: 0
+	@media screen and (max-width 560px)
+		width 200px
+		height: 200px
+		bottom: -100px
+		right -100px
+	@media screen and (max-width 500px)
+		bottom: 0
 .circle-about-img-1
 	width 265px
 	height: 265px
 	bottom: 50px
 	left -190px
+	@media screen and (max-width 991px)
+		display none
 .circle-about-img-2
 	width 421px
 	height: 421px
 	top 100px
 	right -355px
+	@media screen and (max-width 991px)
+		display none
 .about
 	&-content
-		margin-left: 400px
+		margin-left: 380px
+		@media screen and (max-width 1199px)
+			margin-left: 320px
+		@media screen and (max-width 991px)
+			margin-left: 0
+		@media screen and (max-width 500px)
+			.col-xs-6
+				width 100%
 	&-quote
 		&-title
 			position relative
@@ -51,6 +81,17 @@
 			font-weight: bold
 			text-transform uppercase
 			margin 34px 0 30px 66px
+			@media screen and (max-width 1199px)
+				font-size: 32px
+			@media screen and (max-width 991px)
+				font-size: 30px
+			@media screen and (max-width 767px)
+				font-size: 26px
+			@media screen and (max-width 560px)
+				margin 20px 0 20px 30px
+			@media screen and (max-width 386px)
+				font-size: 20px
+				margin 20px 0 20px 15px
 			&:before
 				content: ''
 				display block
@@ -63,6 +104,17 @@
 				background-repeat: no-repeat
 				background-position: center
 				background-size contain
+				@media screen and (max-width 991px)
+					width 66px
+					height: 46px
+					top -18px
+					left -46px
+				@media screen and (max-width 560px)
+					width 48px
+					height: 48px
+					left -26px
+				@media screen and (max-width 386px)
+					left -30px
 			span
 				position relative
 				&:before
@@ -77,15 +129,35 @@
 					background-repeat: no-repeat
 					background-position: center
 					background-size contain
+					@media screen and (max-width 991px)
+						width 66px
+						height: 46px
+						top 10px
+						right -48px
+					@media screen and (max-width 560px)
+						width 48px
+						height: 48px
+						right -36px
+						top 5px
 		&-text
 			span
 				font-weight: bold
 			&:last-of-type
 				margin-left: 230px
+				@media screen and (max-width 1199px)
+					margin-left: 150px
+				@media screen and (max-width 560px)
+					margin-left: 50px
+				@media screen and (max-width 386px)
+					margin-left: 25px
 	&-content-title
 		&s
 			margin 60px auto 76px
 			position relative
+			@media screen and (max-width 991px)
+				margin 35px auto 40px
+			@media screen and (max-width 560px)
+				margin 35px 0 20px
 		font-size: 80px
 		font-weight: 900
 		text-transform uppercase
@@ -93,6 +165,13 @@
 		text-shadow: 2px 2px 0px #fff, 2px 0 0px #fff, 0 2px 0px #fff,
 		-2px 2px 0px #fff, 2px -2px 0px #fff, -2px 0 0px #fff, 0 -2px 0px #fff
 		line-height:50px
+		@media screen and (max-width 1199px)
+			font-size: 60px
+			line-height: 30px
+		@media screen and (max-width 560px)
+			font-size: 40px
+			line-height: 10px
+			margin-bottom: -6px
 		&-img
 			position relative
 			left 20px
@@ -100,30 +179,69 @@
 			display block
 			width 100%
 			max-width 786px
+			height: 75px
+			background-image: url(../img/images/about-text.png)
+			background-repeat no-repeat
+			background-position: center
+			background-size contain
+			@media screen and (max-width 991px)
+				max-width 686px
+			@media screen and (max-width 767px)
+				background-image: url(../img/images/about-text-m.png)
+				max-width 484px
+			@media screen and (max-width 560px)
+				max-width 380px
+			@media screen and (max-width 386px)
+				left 5px
+				top -10px
 	&-item
 		&-title
-			font-size: 50px
+			font-size: 45px
 			font-weight: 900
 			color #0D3397
 			text-transform uppercase
 			line-height: 34px
+			@media screen and (max-width 1199px)
+				font-size: 32px
+				line-height: 30px
+			@media screen and (max-width 560px)
+				font-size: 26px
+				line-height: 24px
+			@media screen and (max-width 500px)
+				margin-bottom: 25px
 			small
 				display block
 				font-size: 22px
 				font-weight: bold
 				text-transform none
 				margin-top: 20px
+				@media screen and (max-width 1199px)
+					font-size: 18px
+				@media screen and (max-width 991px)
+					font-size: 16px
+					margin-top: 10px
+				@media screen and (max-width 560px)
+					margin-top: 5px
 .button-about
 	margin 145px auto 0
-
+	@media screen and (max-width 991px)
+		margin 100px 0 0
+	@media screen and (max-width 560px)
+		margin-top: 75px
 // think section
 #think
 	padding 100px 0 25px
 	position relative
+	@media screen and (max-width 991px)
+		padding 0 0 50px
+	@media screen and (max-width 386px)
+		padding 0 0 30px
 .line-think
 	width 655px
 	top: -100px
 	left -400px
+	@media screen and (max-width 991px)
+		display none
 .moon-think
 	position absolute
 	width 577px
@@ -135,8 +253,46 @@
 	background-size contain
 	top -350px
 	right -250px
+	@media screen and (max-width 991px)
+		position relative
+		top: 0
+		right 150px
+		width 400px
+		height: 400px
+		margin-bottom: 35px
+	@media screen and (max-width 560px)
+		height 300px
+		width 300px
+		right 100px
+	@media screen and (max-width 360px)
+		height 250px
+		width 250px
+.think-img
+	display none
+	position absolute
+	top -100px
+	right -150px
+	width 400px
+	height: 800px
+	background-image: url(../img/images/about-d.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size contain
+	@media screen and (max-width 991px)
+		display block
+	@media screen and (max-width 560px)
+		width 300px
+		height 600px
+		right -139px
+		top 50px
+	@media screen and (max-width 360px)
+		width 250px
+		height 550px
+		// right -200px
 .general-title-think
 	text-align: left
+	@media screen and (max-width 991px)
+		text-align center
 .think-billet
 	margin-bottom: 270px
 	position: relative;
@@ -144,6 +300,10 @@
 	right: 0;
 	width 60%
 	padding-right: 35px
+	@media screen and (max-width 767px)
+		margin-bottom: 0
+	@media screen and (max-width 360px)
+		width 80%
 	&-img
 		height 200px
 		width 20px
@@ -156,6 +316,14 @@
 		position absolute
 		top 0
 		right 0
+		@media screen and (max-width 991px)
+			top 100px
+		@media screen and (max-width 767px)
+			height 100px
+			position: static
+			margin 20px auto 30px
+		@media screen and (max-width 360px)
+			height 60px
 	&-item
 		display inline-block
 		width auto
@@ -174,14 +342,8 @@
 			padding 10px 50px
 			margin 135px 0 0 200px
 			font-size: 26px
-		@media screen and (max-width 650px)
-			margin 135px 0 0 160px
-		@media screen and (max-width 560px)
-			font-size: 20px
-			padding 10px 20px
-			margin 135px 0 0 155px
-		@media screen and (max-width 386px)
-			margin 135px 0 0 90px
+		@media screen and (max-width 767px)
+			display none
 .think-item
 	// &s
 	// 	position relative
@@ -200,13 +362,11 @@
 	display flex
 	align-items: center
 	justify-content: flex-start
-	@media screen and (max-width 1199px)
-		max-width 750px
 	@media screen and (max-width 991px)
 		width 100%
-	@media screen and (max-width 680px)
-		margin-bottom: 50px
-		align-items: flex-start
+		margin-bottom: 40px
+	@media screen and (max-width 560px)
+		margin-bottom: 30px
 	@media screen and (max-width 386px)
 		margin-bottom: 25px
 	&-img
