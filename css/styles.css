@@ -702,12 +702,13 @@ section {
 @media screen and (max-width: 767px) {
   .general-title {
     font-size: 24px;
-    line-height: 34px;
+    line-height: 26px;
   }
 }
 @media screen and (max-width: 560px) {
   .general-title {
     font-size: 20px;
+    line-height: 22px;
   }
 }
 .general-img {
@@ -2391,11 +2392,12 @@ input:-internal-autofill-selected {
 @media screen and (max-width: 767px) {
   .stolen-title {
     font-size: 24px;
-    line-height: 34px;
+    line-height: 26px;
   }
 }
 @media screen and (max-width: 560px) {
   .stolen-title {
+    line-height: 22px;
     font-size: 20px;
   }
 }

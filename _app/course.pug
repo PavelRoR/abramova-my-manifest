@@ -1,0 +1,45 @@
+-var path = '../';
+-var head_url = 'https://abramova.mvacademy.ru/my-manifest/course/';
+-var head_title = '«Мой манифест»';
+-var head_description = 'Онлайн-марафон Жанны Абрамовой';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/course.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libs = path+'js/libs.min.js';
+-var scripts = path+'js/course.min.js';
+-var noref = true;
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+-var ak = true;
+-var ah = true;
+-var href = '#prices';
+
+mixin b(cl, href, p, target, id)
+	a.button(class=cl href!=href target=target id=id)=p
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/course/1-main
+			include pug/main/2-think
+			include pug/main/3-video
+			include pug/course/2-stolen
+			include pug/course/3-do
+			include pug/main/6-waits
+			include pug/main/7-plan
+			include pug/course/4-prices
+			include pug/course/5-doubts
+		include pug/base/2-footer
+		include pug/base/3-scripts
+		include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
