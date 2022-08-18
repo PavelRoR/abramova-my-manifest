@@ -3100,6 +3100,92 @@ input:-internal-autofill-selected {
     top: 4px;
   }
 }
+#prices {
+  padding: 100px 0;
+}
+.line-prices {
+  width: 600px;
+  bottom: 300px;
+  left: -200px;
+}
+.general-img-prices {
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/images/circle-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+  top: -150px;
+  right: -100px;
+}
+.general-title-prices {
+  margin-bottom: 60px;
+}
+.general-title-prices small {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: none;
+  color: #000;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 90%;
+}
+.packet {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 45px;
+  -webkit-box-shadow: 14px 15px 26px rgba(0,0,0,0.09);
+          box-shadow: 14px 15px 26px rgba(0,0,0,0.09);
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background-color: #fff;
+  padding: 30px 30px 45px;
+  text-align: center;
+}
+.packet-head {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.packet-head small {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  font-size: 16px;
+  display: block;
+}
+.packet-body {
+  padding: 20px 0;
+  min-height: 130px;
+}
+.packet-body-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.packet-body-text span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+  color: #f00;
+}
+.cost {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.cost span {
+  display: block;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 66px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #416bd8;
+}
 .doubts-d {
   background-color: #3a3939;
   background-image: url("../img/backs/doubts-d.png");
@@ -3375,113 +3461,4 @@ footer p {
 }
 .soc-buttons a:nth-of-type(6) {
   background-position: -145px 0;
-}
-.white-popup {
-  position: relative;
-  background: #fff;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
-  padding: 50px 20px;
-  width: auto;
-  max-width: 700px;
-  margin: 20px auto;
-  overflow: hidden;
-}
-@media screen and (max-width: 560px) {
-  .white-popup {
-    padding: 30px 20px 20px;
-  }
-}
-@media screen and (max-width: 385px) {
-  .white-popup {
-    padding: 30px 15px 15px;
-  }
-}
-.line-modal {
-  width: 450px;
-  top: 100px;
-  right: -300px;
-}
-@media screen and (max-width: 560px) {
-  .line-modal {
-    top: 75px;
-    right: -325px;
-  }
-}
-@media screen and (max-width: 386px) {
-  .line-modal {
-    top: 25px;
-    right: -350px;
-  }
-}
-.circle-modal {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  bottom: -100px;
-  left: -100px;
-  background-image: url("../img/images/circle-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: contain;
-       -o-background-size: contain;
-          background-size: contain;
-}
-@media screen and (max-width: 767px) {
-  .circle-modal {
-    width: 175px;
-    height: 175px;
-    bottom: -75px;
-    left: -75px;
-  }
-}
-@media screen and (max-width: 386px) {
-  .circle-modal {
-    width: 100px;
-    height: 100px;
-    bottom: -50px;
-    left: -50px;
-  }
-}
-.mfp-fade.mfp-bg {
-  opacity: 0;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
-}
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-}
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-}
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-}
-.general-title-modal {
-  margin: 0 auto 40px;
-  width: 100%;
-  max-width: 560px;
-}
-@media screen and (max-width: 767px) {
-  .general-title-modal {
-    max-width: 395px;
-    margin-bottom: 25px;
-  }
-}
-@media screen and (max-width: 560px) {
-  .general-title-modal {
-    max-width: 340px;
-  }
 }
