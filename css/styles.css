@@ -2694,7 +2694,7 @@ input:-internal-autofill-selected {
 }
 .general-title-waits {
   width: 100%;
-  max-width: 500px;
+  max-width: 490px;
   position: relative;
   margin-bottom: 70px;
 }
@@ -2729,6 +2729,7 @@ input:-internal-autofill-selected {
   }
   .general-title-waits span {
     right: 0;
+    height: 90px;
   }
 }
 @media screen and (max-width: 560px) {
