@@ -67,9 +67,15 @@
 			display block
 			@media screen and (max-width 560px)
 				font-size: 14px
+		span
+			display block
+			font-family: M
+			font-size: 18px
+			font-weight: bold
+			text-transform none
 	&-body
 		padding 20px 0
-		min-height 130px
+		min-height 320px
 		@media screen and (max-width 991px)
 			min-height 1px
 		@media screen and (max-width 386px)
@@ -87,6 +93,9 @@
 				color red
 				@media screen and (max-width 560px)
 					font-size: 20px
+				&.note
+					color #000
+					text-transform none
 .cost
 	font-size: 26px
 	font-weight: bold
@@ -99,9 +108,22 @@
 	span
 		display block
 		font-family: G
-		font-size: 66px
+		font-size: 56px
 		font-weight: 900
 		text-transform uppercase
 		color #416bd8
 		@media screen and (max-width 560px)
 			font-size: 46px
+.more-button
+	display inline-block
+	font-size: 20px
+	font-weight: bold
+	color red
+	border-bottom: 1px dotted
+	transition: all .3s ease
+	&:focus
+		border-bottom: 1px dotted
+		color red
+	&:hover
+		color red
+		border-bottom-color transparent

@@ -27,5 +27,6 @@ $(document).ready(function() {
             }
         }
     });
+    $('.more-button').magnificPopup()
 /*Конец документа*/
 });

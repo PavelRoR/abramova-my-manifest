@@ -2962,9 +2962,16 @@ section {
     font-size: 14px;
   }
 }
+.packet-head span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+}
 .packet-body {
   padding: 20px 0;
-  min-height: 130px;
+  min-height: 320px;
 }
 @media screen and (max-width: 991px) {
   .packet-body {
@@ -2997,6 +3004,10 @@ section {
     font-size: 20px;
   }
 }
+.packet-body-text span.note {
+  color: #000;
+  text-transform: none;
+}
 .cost {
   font-size: 26px;
   font-weight: bold;
@@ -3016,7 +3027,7 @@ section {
 .cost span {
   display: block;
   font-family: 'Gilroy', sans-serif;
-  font-size: 66px;
+  font-size: 56px;
   font-weight: 900;
   text-transform: uppercase;
   color: #416bd8;
@@ -3025,6 +3036,25 @@ section {
   .cost span {
     font-size: 46px;
   }
+}
+.more-button {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f00;
+  border-bottom: 1px dotted;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.more-button:focus {
+  border-bottom: 1px dotted;
+  color: #f00;
+}
+.more-button:hover {
+  color: #f00;
+  border-bottom-color: transparent;
 }
 .doubts-d {
   background-color: #3a3939;
@@ -3301,4 +3331,51 @@ footer p {
 }
 .soc-buttons a:nth-of-type(6) {
   background-position: -145px 0;
+}
+.white-popup {
+  position: relative;
+  background: #fff;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding: 50px 20px;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+@media screen and (max-width: 560px) {
+  .white-popup {
+    padding: 30px 20px 20px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .white-popup {
+    padding: 30px 15px 15px;
+  }
+}
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
 }
